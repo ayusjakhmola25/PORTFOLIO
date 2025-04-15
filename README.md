@@ -30,7 +30,6 @@ This repository showcases my personal portfolio — a collection of my skills, p
 
 I'm currently pursuing **BCA in Cyber Security**. I enjoy experimenting with code, learning new technologies, and turning ideas into real-world applications.
 
-> "Code is like humor. When you have to explain it, it’s bad." – Cory House
 
 ---
 
