@@ -1,18 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <!-- CSS link -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>Welcome to My Portfolio</h1>
-  <button id="clickBtn">Click Me</button>
-  <p id="message"></p>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- JS link -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Ayush Jakhmola</h1>
+      <h3>And I'm <span class="multiple-text"></span></h3>
+      <p>My portfolio shows my experience in designing, building and delivering successful projects. I'm excited to take on new challenges and keep learning.</p>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/ayush-jakhmola"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.github.com/ayusjakhmola25"><i class='bx bxl-github'></i></a>
+      </div>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+      <div class="content">
+        <img src="images/photo4.jpg" alt="Ayush" class="my" />
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/photo.jpg" alt="Ayush" class="my1" />
+    </div>
+    <div class="about-content">
+      <h2 class="heading"><span>About Me</span></h2>
+      <h3>Aspiring Cybersecurity Specialist</h3>
+      <p>Hello! I'm Ayush, a curious and enthusiastic learner passionate about Cybersecurity and Technology. I'm exploring the tech world to build secure and innovative solutions. Let's connect and create something impactful together!</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+    <h6 class="heading">A dynamic set of technical abilities built through projects and continuous learning, showcasing adaptability and problem-solving.</h6>
+    <div class="skills-container">
+      <div class="skills-box"><i class="fa-solid fa-shield-halved"></i><h3>Cybersecurity</h3></div>
+      <div class="skills-box"><i class="fa-solid fa-globe"></i><h3>Networking</h3></div>
+      <div class="skills-box"><i class="fa-solid fa-terminal"></i><h3>Linux</h3></div>
+      <div class="skills-box"><i class="fa-solid fa-database"></i><h3>SQL</h3></div>
+    </div>
+  </section>
+
+  <section class="certificates" id="certificates">
+    <h2 class="heading">Latest <span>Certificates</span></h2>
+    <div class="certificate-container">
+      <div class="certificate-box"><img src="images/cisco_nb.png"/><div class="certificate-layer"><h4>Networking Basics</h4></div></div>
+      <div class="certificate-box"><img src="images/cisco_c.png"/><div class="certificate-layer"><h4>Introduction to Cybersecurity</h4></div></div>
+     
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name"/>
+        <input type="email" placeholder="Email Address"/>
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number"/>
+        <input type="text" placeholder="Email Subject"/>
+      </div>
+      <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn"/>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2025 by Ayush | All Rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
